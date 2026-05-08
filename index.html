@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="【27卒限定】上場企業執行役員と語る、自分軸キャリア座談会｜2026年5月20日（水）14:00開催・渋谷／対面実施・15名募集（最大30名）・参加無料">
-<title>【27卒限定】就活軸が、2時間で言葉になる｜上場企業執行役員と語る少人数キャリア座談会｜株式会社エージェント</title>
+<meta name="description" content="【27卒限定】AI時代に、納得したキャリアを歩むために｜上場企業執行役員と語る少人数キャリア座談会｜2026年5月20日(水)・6月17日(水)・7月8日(水) 各回14:00開催・渋谷／対面実施・参加無料">
+<title>【27卒限定】AI時代に、納得したキャリアを歩むために｜上場企業執行役員と語る少人数キャリア座談会｜株式会社エージェント</title>
 <style>
 :root{
   --main:#00B0F0;
@@ -718,6 +718,68 @@ section{
   color:var(--text);
 }
 
+/* ===== 開催日程カード（3日程） ===== */
+.overview .dates-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  max-width:760px;
+  margin:0 auto 36px;
+}
+.overview .date-card{
+  background:rgba(255,255,255,0.12);
+  border:1px solid rgba(255,255,255,0.25);
+  border-radius:12px;
+  padding:24px 18px;
+  text-align:center;
+  color:#fff;
+}
+.overview .date-card .month{
+  font-size:13px;
+  letter-spacing:3px;
+  font-weight:bold;
+  opacity:0.9;
+  margin-bottom:6px;
+  font-family:'Helvetica Neue',Arial,sans-serif;
+}
+.overview .date-card .day{
+  font-size:48px;
+  font-weight:900;
+  line-height:1;
+  margin-bottom:8px;
+  letter-spacing:-0.02em;
+  font-family:'Helvetica Neue',Arial,sans-serif;
+}
+.overview .date-card .weekday{
+  font-size:12px;
+  opacity:0.85;
+  letter-spacing:1px;
+  margin-bottom:8px;
+}
+.overview .date-card .time{
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:14px;
+  padding-top:10px;
+  border-top:1px solid rgba(255,255,255,0.25);
+}
+.overview .date-card .tag{
+  display:inline-block;
+  background:#FFC000;
+  color:#003F5C;
+  font-size:11px;
+  font-weight:bold;
+  padding:3px 12px;
+  border-radius:20px;
+  letter-spacing:1px;
+}
+.overview .dates-lead{
+  font-size:15px;
+  margin:-16px auto 28px;
+  opacity:0.95;
+  max-width:680px;
+}
+
 /* ===== 開催概要 + CTA ===== */
 .overview{
   background:linear-gradient(135deg,#00B0F0 0%,#0079B5 100%);
@@ -994,6 +1056,12 @@ footer a:hover{opacity:1}
   .overview-table dd{font-size:14px}
   .overview-cta{padding:22px 28px;font-size:19px;font-weight:900;width:100%;justify-content:center;box-sizing:border-box;letter-spacing:0.05em}
 
+  /* 開催日程カード（モバイル） */
+  .overview .dates-cards{grid-template-columns:1fr;gap:12px;margin-bottom:28px}
+  .overview .date-card{padding:20px 18px}
+  .overview .date-card .day{font-size:42px}
+  .overview .dates-lead{font-size:14px;margin:-8px auto 22px}
+
   /* 注意事項 */
   .notes{padding:32px 18px}
   .notes-inner{padding:20px}
@@ -1079,7 +1147,7 @@ footer a:hover{opacity:1}
 </div>
 
 <!-- 固定CTA -->
-<a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2255645456772521984/apply" class="float-cta" target="_blank" rel="noopener">
+<a href="https://docs.google.com/forms/d/e/REPLACE_ME_WITH_FORM_B_URL/viewform" class="float-cta" target="_blank" rel="noopener">
   申込フォームへ進む<span class="arrow">→</span>
 </a>
 
@@ -1114,11 +1182,11 @@ footer a:hover{opacity:1}
     <div class="hero-meta">
       <div class="hero-meta-item">
         <span class="label">DATE</span>
-        <span class="value">2026.5.20 (Wed)</span>
+        <span class="value">2026.5.20 (Wed)<br>2026.6.17 (Wed)<br>2026.7. 8 (Wed)<br><small style="font-size:11px;font-weight:normal;opacity:0.85;">※都合の良い1日をお選びください</small></span>
       </div>
       <div class="hero-meta-item">
         <span class="label">TIME</span>
-        <span class="value">14:00 - 16:00<br><small style="font-size:12px;font-weight:normal;opacity:0.85;line-height:1.6;">※13:45 受付開始<br>※16:00〜16:30 任意参加の懇親会あり</small></span>
+        <span class="value">14:00 - 16:00<br><small style="font-size:12px;font-weight:normal;opacity:0.85;line-height:1.6;">※各回 13:45 受付開始<br>※16:00〜16:30 任意参加の懇親会あり</small></span>
       </div>
       <div class="hero-meta-item">
         <span class="label">PLACE</span>
@@ -1126,7 +1194,7 @@ footer a:hover{opacity:1}
       </div>
       <div class="hero-meta-item">
         <span class="label">CAPACITY</span>
-        <span class="value">15名募集（最大30名）</span>
+        <span class="value">各回 最大30名</span>
       </div>
       <div class="hero-meta-item">
         <span class="label">FEE</span>
@@ -1134,10 +1202,10 @@ footer a:hover{opacity:1}
       </div>
     </div>
 
-    <a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2255645456772521984/apply" class="hero-cta" target="_blank" rel="noopener">
+    <a href="https://docs.google.com/forms/d/e/REPLACE_ME_WITH_FORM_B_URL/viewform" class="hero-cta" target="_blank" rel="noopener">
       申込フォームへ進む<span class="arrow">→</span>
     </a>
-    <p class="hero-note">※ 定員30名に達し次第、受付終了します</p>
+    <p class="hero-note">※ 各回 定員30名に達し次第、受付終了します</p>
   </div>
 </section>
 
@@ -1496,19 +1564,45 @@ footer a:hover{opacity:1}
     <p class="section-label">OVERVIEW</p>
     <h2 class="section-title">開催概要</h2>
 
+    <p class="dates-lead">同じ内容で <strong>3日程</strong> 開催。<br>ご都合の良い日をお選びいただけます。</p>
+
+    <div class="dates-cards">
+      <div class="date-card">
+        <p class="month">MAY</p>
+        <p class="day">20</p>
+        <p class="weekday">Wednesday</p>
+        <p class="time">14:00 – 16:00</p>
+        <span class="tag">受付中</span>
+      </div>
+      <div class="date-card">
+        <p class="month">JUN</p>
+        <p class="day">17</p>
+        <p class="weekday">Wednesday</p>
+        <p class="time">14:00 – 16:00</p>
+        <span class="tag">受付中</span>
+      </div>
+      <div class="date-card">
+        <p class="month">JUL</p>
+        <p class="day">8</p>
+        <p class="weekday">Wednesday</p>
+        <p class="time">14:00 – 16:00</p>
+        <span class="tag">受付中</span>
+      </div>
+    </div>
+
     <div class="overview-table">
       <dl>
         <dt>イベント名</dt>
         <dd>【27卒限定】AI時代に、納得したキャリアを歩むために<br>上場企業執行役員と語る、少人数キャリア座談会</dd>
 
         <dt>開催日時</dt>
-        <dd>2026年5月20日（水）14:00〜16:00<br><span style="font-size:13px;opacity:0.85;">※13:45 受付開始<br>※16:00〜16:30 任意参加の懇親会あり</span></dd>
+        <dd>下記3日程からお選びいただけます<br>　・2026年 5月20日（水）14:00〜16:00<br>　・2026年 6月17日（水）14:00〜16:00<br>　・2026年 7月 8日（水）14:00〜16:00<br><span style="font-size:13px;opacity:0.85;">※いずれも 13:45 受付開始<br>※各回 16:00〜16:30 任意参加の懇親会あり</span></dd>
 
         <dt>会場</dt>
         <dd>株式会社エージェント 東京本社<br>渋谷区道玄坂2丁目25-12 道玄坂通 5F</dd>
 
         <dt>定員</dt>
-        <dd>15名募集（最大30名・先着順）</dd>
+        <dd>各回 最大30名（先着順）</dd>
 
         <dt>参加費</dt>
         <dd>無料</dd>
@@ -1521,10 +1615,10 @@ footer a:hover{opacity:1}
       </dl>
     </div>
 
-    <a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2255645456772521984/apply" class="overview-cta" target="_blank" rel="noopener">
-      申込フォームへ進む<span>→</span>
+    <a href="https://docs.google.com/forms/d/e/REPLACE_ME_WITH_FORM_B_URL/viewform" class="overview-cta" target="_blank" rel="noopener">
+      申込フォームで日程を選択する<span>→</span>
     </a>
-    <p class="overview-note">※ 定員30名に達し次第、受付を終了します</p>
+    <p class="overview-note">※ 各回 定員30名に達し次第、受付を終了します</p>
   </div>
 </section>
 
