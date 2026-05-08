@@ -90,6 +90,39 @@ a:hover{color:var(--main-dark)}
 }
 .float-cta .arrow{font-size:18px}
 
+/* ===== 固定CTA（3日程ボタン） ===== */
+.float-cta-list{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  z-index:100;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.float-cta-date{
+  display:inline-flex;
+  align-items:center;
+  justify-content:space-between;
+  background:var(--accent);
+  color:var(--dark);
+  font-weight:900;
+  padding:14px 24px;
+  border-radius:50px;
+  box-shadow:0 4px 14px rgba(255,192,0,0.4);
+  font-size:15px;
+  letter-spacing:0.04em;
+  gap:10px;
+  min-width:130px;
+  transition:transform .2s, box-shadow .2s;
+}
+.float-cta-date:hover{
+  transform:translateY(-2px);
+  color:var(--dark);
+  box-shadow:0 6px 18px rgba(255,192,0,0.5);
+}
+.float-cta-date .arrow{font-size:16px;font-weight:bold}
+
 /* ===== ヒーロー（ファーストビュー） ===== */
 .hero{
   background:linear-gradient(135deg,#00B0F0 0%,#0079B5 100%);
@@ -1145,8 +1178,30 @@ footer a:hover{opacity:1}
     border-radius:8px;
     box-shadow:0 -2px 16px rgba(0,176,240,0.3);
   }
+
+  /* 固定CTA（3日程ボタン）：モバイルは下部に横並び3ボタン */
+  .float-cta-list{
+    flex-direction:row;
+    left:8px;
+    right:8px;
+    bottom:8px;
+    gap:6px;
+  }
+  .float-cta-date{
+    flex:1;
+    min-width:0;
+    padding:14px 6px;
+    font-size:14px;
+    border-radius:8px;
+    justify-content:center;
+    box-shadow:0 -2px 12px rgba(0,0,0,0.15);
+    gap:4px;
+  }
+  .float-cta-date .arrow{font-size:14px}
+
   /* メニュー開いている時はCTA非表示・スクロール禁止 */
-  body.menu-open .float-cta{display:none}
+  body.menu-open .float-cta,
+  body.menu-open .float-cta-list{display:none}
   body.menu-open{overflow:hidden}
 }
 
@@ -1208,10 +1263,18 @@ footer a:hover{opacity:1}
   </nav>
 </div>
 
-<!-- 固定CTA -->
-<a href="#apply" class="float-cta">
-  日程を選んで申込む<span class="arrow">→</span>
-</a>
+<!-- 固定CTA（3日程ボタン） -->
+<div class="float-cta-list">
+  <a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2255645456772521984/apply" class="float-cta-date" target="_blank" rel="noopener">
+    5月分<span class="arrow">→</span>
+  </a>
+  <a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2258865244605706240/apply" class="float-cta-date" target="_blank" rel="noopener">
+    6月分<span class="arrow">→</span>
+  </a>
+  <a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2258865695178813440/apply" class="float-cta-date" target="_blank" rel="noopener">
+    7月分<span class="arrow">→</span>
+  </a>
+</div>
 
 <!-- ===== ヒーロー ===== -->
 <section class="hero" id="hero">
