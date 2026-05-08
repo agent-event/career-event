@@ -238,6 +238,47 @@ a:hover{color:var(--main-dark)}
   transition:transform .2s;
 }
 .hero-cta:hover{transform:translateY(-2px);color:var(--dark)}
+
+/* ===== Hero CTA リスト（3日程ボタン） ===== */
+.hero-cta-list{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  max-width:480px;
+  margin-bottom:8px;
+}
+.hero-cta-date{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:var(--accent);
+  color:var(--dark);
+  font-weight:900;
+  padding:18px 28px;
+  border-radius:50px;
+  letter-spacing:0.04em;
+  box-shadow:0 4px 14px rgba(255,192,0,0.35);
+  gap:14px;
+  transition:transform .2s, box-shadow .2s;
+}
+.hero-cta-date:hover{
+  transform:translateY(-2px);
+  color:var(--dark);
+  box-shadow:0 6px 18px rgba(255,192,0,0.45);
+}
+.hero-cta-date .cta-date-label{
+  font-size:18px;
+  font-weight:900;
+  white-space:nowrap;
+}
+.hero-cta-date .cta-date-action{
+  font-size:14px;
+  font-weight:bold;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+.hero-cta-date .arrow{font-size:16px;font-weight:bold}
 .hero-note{
   margin-top:16px;
   font-size:13px;
@@ -735,44 +776,54 @@ section{
   color:#fff;
 }
 .overview .date-card .month{
-  font-size:13px;
-  letter-spacing:3px;
+  font-size:15px;
+  letter-spacing:1px;
   font-weight:bold;
-  opacity:0.9;
-  margin-bottom:6px;
-  font-family:'Helvetica Neue',Arial,sans-serif;
+  opacity:0.95;
+  margin-bottom:4px;
 }
 .overview .date-card .day{
-  font-size:48px;
+  font-size:54px;
   font-weight:900;
   line-height:1;
-  margin-bottom:8px;
+  margin-bottom:6px;
   letter-spacing:-0.02em;
   font-family:'Helvetica Neue',Arial,sans-serif;
 }
 .overview .date-card .weekday{
-  font-size:12px;
-  opacity:0.85;
+  font-size:13px;
+  opacity:0.9;
   letter-spacing:1px;
-  margin-bottom:8px;
+  margin-bottom:10px;
+  font-weight:bold;
 }
 .overview .date-card .time{
   font-size:14px;
   font-weight:bold;
-  margin-bottom:14px;
+  margin-bottom:16px;
   padding-top:10px;
   border-top:1px solid rgba(255,255,255,0.25);
 }
-.overview .date-card .tag{
-  display:inline-block;
+.overview .date-card-cta{
+  display:inline-flex;
+  align-items:center;
   background:#FFC000;
   color:#003F5C;
-  font-size:11px;
-  font-weight:bold;
-  padding:3px 12px;
-  border-radius:20px;
-  letter-spacing:1px;
+  font-weight:900;
+  padding:11px 22px;
+  border-radius:50px;
+  font-size:13px;
+  letter-spacing:0.04em;
+  gap:6px;
+  transition:transform .2s, box-shadow .2s;
+  box-shadow:0 2px 8px rgba(0,0,0,0.12);
 }
+.overview .date-card-cta:hover{
+  transform:translateY(-2px);
+  color:#003F5C;
+  box-shadow:0 4px 12px rgba(0,0,0,0.18);
+}
+.overview .date-card-cta span{font-size:14px;font-weight:bold}
 .overview .dates-lead{
   font-size:15px;
   margin:-16px auto 28px;
@@ -1056,11 +1107,22 @@ footer a:hover{opacity:1}
   .overview-table dd{font-size:14px}
   .overview-cta{padding:22px 28px;font-size:19px;font-weight:900;width:100%;justify-content:center;box-sizing:border-box;letter-spacing:0.05em}
 
-  /* 開催日程カード（モバイル） */
-  .overview .dates-cards{grid-template-columns:1fr;gap:12px;margin-bottom:28px}
-  .overview .date-card{padding:20px 18px}
-  .overview .date-card .day{font-size:42px}
-  .overview .dates-lead{font-size:14px;margin:-8px auto 22px}
+  /* 開催日程カード（モバイル：3列維持） */
+  .overview .dates-cards{grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:24px}
+  .overview .date-card{padding:18px 6px}
+  .overview .date-card .month{font-size:12px;margin-bottom:2px}
+  .overview .date-card .day{font-size:36px;margin-bottom:2px}
+  .overview .date-card .weekday{font-size:11px;margin-bottom:8px}
+  .overview .date-card .time{font-size:11px;margin-bottom:12px;padding-top:8px}
+  .overview .date-card-cta{padding:8px 12px;font-size:11px;gap:3px;letter-spacing:0}
+  .overview .date-card-cta span{font-size:12px}
+  .overview .dates-lead{font-size:14px;margin:-8px auto 22px;line-height:1.7}
+
+  /* Hero CTA リスト（モバイル） */
+  .hero-cta-list{max-width:100%;gap:10px}
+  .hero-cta-date{padding:16px 22px;flex-wrap:wrap}
+  .hero-cta-date .cta-date-label{font-size:16px}
+  .hero-cta-date .cta-date-action{font-size:13px}
 
   /* 注意事項 */
   .notes{padding:32px 18px}
@@ -1147,8 +1209,8 @@ footer a:hover{opacity:1}
 </div>
 
 <!-- 固定CTA -->
-<a href="https://docs.google.com/forms/d/e/REPLACE_ME_WITH_FORM_B_URL/viewform" class="float-cta" target="_blank" rel="noopener">
-  申込フォームへ進む<span class="arrow">→</span>
+<a href="#apply" class="float-cta">
+  日程を選んで申込む<span class="arrow">→</span>
 </a>
 
 <!-- ===== ヒーロー ===== -->
@@ -1194,7 +1256,7 @@ footer a:hover{opacity:1}
       </div>
       <div class="hero-meta-item">
         <span class="label">CAPACITY</span>
-        <span class="value">各回 最大30名</span>
+        <span class="value">15名募集（最大30名）</span>
       </div>
       <div class="hero-meta-item">
         <span class="label">FEE</span>
@@ -1202,9 +1264,20 @@ footer a:hover{opacity:1}
       </div>
     </div>
 
-    <a href="https://docs.google.com/forms/d/e/REPLACE_ME_WITH_FORM_B_URL/viewform" class="hero-cta" target="_blank" rel="noopener">
-      申込フォームへ進む<span class="arrow">→</span>
-    </a>
+    <div class="hero-cta-list">
+      <a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2255645456772521984/apply" class="hero-cta-date" target="_blank" rel="noopener">
+        <span class="cta-date-label">5月20日（水）</span>
+        <span class="cta-date-action">の申込はこちら<span class="arrow">→</span></span>
+      </a>
+      <a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2258865244605706240/apply" class="hero-cta-date" target="_blank" rel="noopener">
+        <span class="cta-date-label">6月17日（水）</span>
+        <span class="cta-date-action">の申込はこちら<span class="arrow">→</span></span>
+      </a>
+      <a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2258865695178813440/apply" class="hero-cta-date" target="_blank" rel="noopener">
+        <span class="cta-date-label">7月8日（水）</span>
+        <span class="cta-date-action">の申込はこちら<span class="arrow">→</span></span>
+      </a>
+    </div>
     <p class="hero-note">※ 各回 定員30名に達し次第、受付終了します</p>
   </div>
 </section>
@@ -1564,29 +1637,39 @@ footer a:hover{opacity:1}
     <p class="section-label">OVERVIEW</p>
     <h2 class="section-title">開催概要</h2>
 
-    <p class="dates-lead">同じ内容で <strong>3日程</strong> 開催。<br>ご都合の良い日をお選びいただけます。</p>
+    <p class="dates-lead">
+      同じ内容で <strong>5月・6月・7月</strong> の3日程開催。<br>
+      整えた「自分軸」が就活で活きるのは、決定する“前”。<br>
+      <strong>早い日程ほど、その軸を活かせる時間が長くなります。</strong>
+    </p>
 
     <div class="dates-cards">
       <div class="date-card">
-        <p class="month">MAY</p>
+        <p class="month">5月</p>
         <p class="day">20</p>
-        <p class="weekday">Wednesday</p>
+        <p class="weekday">水曜日</p>
         <p class="time">14:00 – 16:00</p>
-        <span class="tag">受付中</span>
+        <a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2255645456772521984/apply" class="date-card-cta" target="_blank" rel="noopener">
+          5月分はこちら<span>→</span>
+        </a>
       </div>
       <div class="date-card">
-        <p class="month">JUN</p>
+        <p class="month">6月</p>
         <p class="day">17</p>
-        <p class="weekday">Wednesday</p>
+        <p class="weekday">水曜日</p>
         <p class="time">14:00 – 16:00</p>
-        <span class="tag">受付中</span>
+        <a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2258865244605706240/apply" class="date-card-cta" target="_blank" rel="noopener">
+          6月分はこちら<span>→</span>
+        </a>
       </div>
       <div class="date-card">
-        <p class="month">JUL</p>
+        <p class="month">7月</p>
         <p class="day">8</p>
-        <p class="weekday">Wednesday</p>
+        <p class="weekday">水曜日</p>
         <p class="time">14:00 – 16:00</p>
-        <span class="tag">受付中</span>
+        <a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2258865695178813440/apply" class="date-card-cta" target="_blank" rel="noopener">
+          7月分はこちら<span>→</span>
+        </a>
       </div>
     </div>
 
@@ -1602,7 +1685,7 @@ footer a:hover{opacity:1}
         <dd>株式会社エージェント 東京本社<br>渋谷区道玄坂2丁目25-12 道玄坂通 5F</dd>
 
         <dt>定員</dt>
-        <dd>各回 最大30名（先着順）</dd>
+        <dd>各回 15名募集（最大30名・先着順）</dd>
 
         <dt>参加費</dt>
         <dd>無料</dd>
@@ -1615,9 +1698,6 @@ footer a:hover{opacity:1}
       </dl>
     </div>
 
-    <a href="https://docs.google.com/forms/d/e/REPLACE_ME_WITH_FORM_B_URL/viewform" class="overview-cta" target="_blank" rel="noopener">
-      申込フォームで日程を選択する<span>→</span>
-    </a>
     <p class="overview-note">※ 各回 定員30名に達し次第、受付を終了します</p>
   </div>
 </section>
