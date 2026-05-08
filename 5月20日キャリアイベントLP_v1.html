@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="【27卒限定】上場企業執行役員と語る、自分軸キャリア座談会｜2026年5月20日（水）14:00開催・渋谷オフライン・定員30名・参加無料">
+<title>【27卒限定】就活軸が、2時間で言葉になる｜上場企業執行役員と語る少人数キャリア座談会｜株式会社エージェント</title>
+<style>
+:root{
+  --main:#00B0F0;
+  --main-dark:#0091C7;
+  --main-light:#E1F5FE;
+  --accent:#FFC000;
+  --accent-dark:#E5AB00;
+  --dark:#003F5C;
+  --text:#2C3E50;
+  --text-sub:#6C757D;
+  --bg:#FFFFFF;
+  --bg-section:#F8FBFF;
+  --bg-card:#FFFFFF;
+  --border:#E0E7EF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{
+  font-family:'Meiryo','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3',sans-serif;
+  color:var(--text);
+  line-height:1.7;
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--main);text-decoration:none}
+a:hover{color:var(--main-dark)}
+
+/* ===== 固定サイドナビ（右） ===== */
+.side-nav{
+  position:fixed;
+  top:50%;
+  right:24px;
+  transform:translateY(-50%);
+  z-index:100;
+  background:rgba(255,255,255,0.95);
+  border:1px solid var(--border);
+  padding:18px 16px;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,176,240,0.1);
+}
+.side-nav ul{list-style:none}
+.side-nav li{margin:8px 0;font-size:13px}
+.side-nav a{
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  padding:6px 8px;
+  border-radius:4px;
+  transition:all .2s;
+}
+.side-nav a:hover{background:var(--main-light);color:var(--main-dark)}
+.side-nav a .num{
+  display:inline-block;
+  width:20px;
+  font-weight:bold;
+  color:var(--main);
+}
+
+/* ===== 固定CTA（右下） ===== */
+.float-cta{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  z-index:100;
+  background:var(--accent);
+  color:var(--dark);
+  font-weight:900;
+  padding:18px 28px;
+  border-radius:50px;
+  box-shadow:0 4px 16px rgba(255,192,0,0.4);
+  font-size:17px;
+  letter-spacing:0.03em;
+  transition:transform .2s, box-shadow .2s;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.float-cta:hover{
+  transform:translateY(-2px);
+  color:var(--dark);
+  box-shadow:0 6px 20px rgba(255,192,0,0.5);
+}
+.float-cta .arrow{font-size:18px}
+
+/* ===== ヒーロー（ファーストビュー） ===== */
+.hero{
+  background:linear-gradient(135deg,#00B0F0 0%,#0079B5 100%);
+  color:#fff;
+  padding:80px 20px 100px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  top:-100px;
+  right:-100px;
+  width:400px;
+  height:400px;
+  background:rgba(255,255,255,0.05);
+  border-radius:50%;
+}
+.hero-inner{
+  max-width:1080px;
+  margin:0 auto;
+  position:relative;
+  z-index:1;
+}
+.hero .brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:32px;
+  font-weight:bold;
+}
+.hero .brand-logo-img{
+  height:32px;
+  width:auto;
+  background:#fff;
+  padding:6px 12px;
+  border-radius:4px;
+  display:block;
+  box-shadow:0 1px 4px rgba(0,0,0,0.08);
+}
+.hero .brand-jpx{
+  background:rgba(255,255,255,0.18);
+  padding:6px 14px;
+  border-radius:4px;
+  font-size:13px;
+  letter-spacing:0.5px;
+  font-weight:bold;
+  border:1px solid rgba(255,255,255,0.3);
+}
+.hero .badge{
+  display:inline-block;
+  background:var(--accent);
+  color:var(--dark);
+  font-size:14px;
+  font-weight:bold;
+  padding:6px 16px;
+  border-radius:4px;
+  letter-spacing:2px;
+  margin-bottom:20px;
+}
+.hero h1{
+  font-size:42px;
+  line-height:1.4;
+  font-weight:bold;
+  margin-bottom:24px;
+  letter-spacing:0.02em;
+}
+.hero h1 .highlight{
+  background:linear-gradient(transparent 70%,#FFC000 70%);
+  padding:0 4px;
+}
+.hero .lead{
+  font-size:18px;
+  line-height:1.8;
+  margin-bottom:36px;
+  opacity:0.95;
+  max-width:720px;
+}
+.hero-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px 40px;
+  margin-bottom:40px;
+  padding:20px 24px;
+  background:rgba(255,255,255,0.1);
+  border-radius:8px;
+  border-left:4px solid var(--accent);
+}
+.hero-meta-item{
+  display:flex;
+  flex-direction:column;
+}
+.hero-meta-item .label{
+  font-size:12px;
+  letter-spacing:1.2px;
+  opacity:0.9;
+  margin-bottom:4px;
+  font-weight:bold;
+}
+.hero-meta-item .value{
+  font-size:18px;
+  font-weight:bold;
+}
+.hero-image{
+  margin:0 0 32px;
+  border-radius:12px;
+  overflow:hidden;
+  background:#fff;
+  position:relative;
+  box-shadow:0 6px 20px rgba(0,0,0,0.15);
+}
+.hero-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.hero-image.placeholder img{display:none}
+.hero-image.placeholder{
+  min-height:200px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.hero-image-placeholder-text{
+  display:none;
+  padding:24px;
+  text-align:center;
+  font-size:13px;
+  color:rgba(255,255,255,0.85);
+  font-weight:bold;
+  letter-spacing:0.05em;
+}
+.hero-image.placeholder .hero-image-placeholder-text{display:block}
+.hero-cta{
+  display:inline-flex;
+  align-items:center;
+  background:var(--accent);
+  color:var(--dark);
+  font-weight:900;
+  padding:20px 44px;
+  border-radius:50px;
+  font-size:20px;
+  letter-spacing:0.05em;
+  box-shadow:0 6px 20px rgba(255,192,0,0.4);
+  gap:12px;
+  transition:transform .2s;
+}
+.hero-cta:hover{transform:translateY(-2px);color:var(--dark)}
+.hero-note{
+  margin-top:16px;
+  font-size:13px;
+  opacity:0.85;
+}
+
+/* ===== セクション共通 ===== */
+section{
+  padding:80px 20px;
+}
+.section-inner{
+  max-width:1000px;
+  margin:0 auto;
+}
+.section-label{
+  text-align:center;
+  font-size:13px;
+  letter-spacing:3px;
+  color:var(--main);
+  font-weight:bold;
+  margin-bottom:8px;
+}
+.section-title{
+  text-align:center;
+  font-size:32px;
+  font-weight:bold;
+  color:var(--dark);
+  margin-bottom:48px;
+  line-height:1.4;
+}
+.section-title .highlight{
+  background:linear-gradient(transparent 65%,#FFE57F 65%);
+  padding:0 4px;
+}
+
+/* ===== 信頼の根拠 ===== */
+.trust{background:var(--bg-section)}
+.trust-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.trust-card{
+  background:var(--bg-card);
+  border:2px solid var(--main-light);
+  border-radius:12px;
+  padding:32px 24px;
+  text-align:center;
+}
+.trust-card .num{
+  font-size:48px;
+  font-weight:bold;
+  color:var(--main);
+  line-height:1;
+  margin-bottom:12px;
+  letter-spacing:-0.02em;
+}
+.trust-card .num small{font-size:24px}
+.trust-card .label{
+  font-size:14px;
+  color:var(--text-sub);
+  font-weight:bold;
+}
+.trust-card .desc{
+  margin-top:8px;
+  font-size:12px;
+  color:var(--text-sub);
+}
+
+/* ===== ベネフィット（解決される課題） ===== */
+.benefits .lead-block{
+  text-align:center;
+  margin-bottom:48px;
+  font-size:18px;
+  line-height:2;
+}
+.benefits-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:32px;
+}
+.benefit-card{
+  background:#fff;
+  border-radius:12px;
+  padding:32px 24px;
+  box-shadow:0 4px 16px rgba(0,176,240,0.08);
+  border-top:4px solid var(--main);
+  position:relative;
+}
+.benefit-card .number{
+  position:absolute;
+  top:-20px;
+  left:24px;
+  background:var(--main);
+  color:#fff;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  font-size:18px;
+}
+.benefit-card .problem{
+  font-size:13px;
+  color:var(--text-sub);
+  margin-bottom:8px;
+  font-weight:bold;
+}
+.benefit-card h3{
+  font-size:20px;
+  color:var(--dark);
+  margin-bottom:12px;
+  line-height:1.5;
+}
+.benefit-card p{
+  font-size:14px;
+  line-height:1.8;
+  color:var(--text);
+}
+.benefit-card .arrow-line{
+  margin:16px 0 12px;
+  border-top:2px dashed var(--main-light);
+}
+
+/* ===== 過去開催の様子（イベントギャラリー） ===== */
+.events{background:var(--bg-section)}
+.events-lead{
+  text-align:center;
+  font-size:15px;
+  color:var(--text-sub);
+  margin-bottom:36px;
+  line-height:1.8;
+}
+.events-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.event-photo{
+  margin:0;
+  border-radius:8px;
+  overflow:hidden;
+  background:var(--bg-card);
+  box-shadow:0 2px 8px rgba(0,63,92,0.08);
+}
+.event-photo img{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  display:block;
+}
+.event-photo figcaption{
+  padding:10px 14px;
+  font-size:12px;
+  color:var(--text-sub);
+  background:#fff;
+  border-top:1px solid var(--border);
+}
+
+/* ===== タイムテーブル ===== */
+.timetable{background:var(--bg-section)}
+.timetable-list{
+  max-width:760px;
+  margin:0 auto;
+  border-left:3px solid var(--main);
+  padding-left:32px;
+  position:relative;
+}
+.timetable-row{
+  position:relative;
+  padding:20px 0 24px;
+  border-bottom:1px solid var(--border);
+}
+.timetable-row:last-child{border-bottom:none}
+.timetable-row::before{
+  content:"";
+  position:absolute;
+  left:-39px;
+  top:28px;
+  width:14px;
+  height:14px;
+  background:var(--main);
+  border-radius:50%;
+  border:3px solid #fff;
+  box-shadow:0 0 0 2px var(--main);
+}
+.timetable-row .time{
+  display:inline-block;
+  font-size:18px;
+  font-weight:bold;
+  color:var(--main-dark);
+  margin-right:16px;
+  font-family:'Helvetica Neue',Arial,sans-serif;
+  letter-spacing:0.05em;
+}
+.timetable-row .duration{
+  display:inline-block;
+  background:var(--main-light);
+  color:var(--main-dark);
+  font-size:11px;
+  padding:2px 8px;
+  border-radius:4px;
+  margin-right:8px;
+  vertical-align:middle;
+}
+.timetable-row .phase{
+  display:inline-block;
+  background:var(--accent);
+  color:var(--dark);
+  font-weight:bold;
+  font-size:12px;
+  padding:2px 8px;
+  border-radius:4px;
+  margin-right:8px;
+  vertical-align:middle;
+}
+.timetable-row h4{
+  display:inline;
+  font-size:18px;
+  color:var(--dark);
+  font-weight:bold;
+}
+.timetable-row .speaker{
+  display:block;
+  margin-top:8px;
+  font-size:13px;
+  color:var(--text-sub);
+}
+.timetable-row .desc{
+  margin-top:8px;
+  font-size:14px;
+  line-height:1.7;
+  color:var(--text);
+}
+.timetable-note{
+  max-width:760px;
+  margin:32px auto 0;
+  padding:14px 20px;
+  background:#fff;
+  border-left:3px solid var(--accent);
+  font-size:13px;
+  color:var(--text-sub);
+  line-height:1.7;
+  border-radius:4px;
+}
+.nowrap{white-space:nowrap}
+
+/* ===== 登壇者 ===== */
+.speakers-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:32px;
+}
+.speaker-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:32px;
+  display:flex;
+  gap:24px;
+  align-items:flex-start;
+}
+.speaker-card .photo{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  background:var(--main-light);
+  flex-shrink:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--main);
+  font-size:11px;
+  font-weight:bold;
+  text-align:center;
+  border:3px solid var(--main);
+  overflow:hidden;
+}
+.speaker-card .photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.speaker-card .photo.silhouette svg{
+  width:65%;
+  height:65%;
+  fill:var(--main);
+}
+.testimonial-card .person .photo.silhouette svg{
+  width:75%;
+  height:75%;
+  fill:var(--main);
+}
+.speaker-card .info .role{
+  display:inline-block;
+  background:var(--main);
+  color:#fff;
+  font-size:11px;
+  padding:3px 10px;
+  border-radius:4px;
+  margin-bottom:8px;
+  letter-spacing:0.5px;
+}
+.speaker-card .info h3{
+  font-size:22px;
+  color:var(--dark);
+  margin-bottom:4px;
+}
+.speaker-card .info .en{
+  font-size:12px;
+  color:var(--text-sub);
+  margin-bottom:12px;
+  letter-spacing:0.05em;
+}
+.speaker-card .info .bio{
+  font-size:13px;
+  line-height:1.8;
+}
+
+/* ===== こんな人におすすめ ===== */
+.for-you{background:var(--bg-section)}
+.for-you-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
+.for-you-card{
+  background:#fff;
+  border-radius:12px;
+  padding:28px;
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  border-left:4px solid var(--accent);
+  box-shadow:0 2px 8px rgba(0,0,0,0.04);
+}
+.for-you-card .icon{
+  font-size:40px;
+  line-height:1;
+  flex-shrink:0;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:var(--accent);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.for-you-card h4{
+  font-size:17px;
+  color:var(--dark);
+  margin-bottom:8px;
+  line-height:1.5;
+}
+.for-you-card p{
+  font-size:13px;
+  line-height:1.7;
+  color:var(--text-sub);
+}
+
+/* ===== 過去参加者の声 ===== */
+.testimonials-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.testimonial-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:28px 24px;
+  position:relative;
+}
+.testimonial-card::before{
+  content:'"';
+  position:absolute;
+  top:-10px;
+  left:20px;
+  font-size:80px;
+  color:var(--main-light);
+  font-family:'Georgia',serif;
+  line-height:1;
+  font-weight:bold;
+}
+.testimonial-card .quote{
+  font-size:14px;
+  line-height:1.8;
+  margin-bottom:20px;
+  position:relative;
+  z-index:1;
+}
+.testimonial-card .person{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  border-top:1px solid var(--border);
+  padding-top:16px;
+}
+.testimonial-card .person .photo{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  background:var(--main-light);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--main);
+  font-size:10px;
+  font-weight:bold;
+}
+.testimonial-card .person .name{
+  font-size:13px;
+  font-weight:bold;
+}
+.testimonial-card .person .meta{
+  font-size:12px;
+  color:var(--text-sub);
+}
+
+/* ===== FAQ ===== */
+.faq{background:var(--bg-section)}
+.faq-list{
+  max-width:760px;
+  margin:0 auto;
+}
+.faq-item{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:8px;
+  margin-bottom:12px;
+  overflow:hidden;
+}
+.faq-item summary{
+  padding:20px 24px;
+  cursor:pointer;
+  font-weight:bold;
+  font-size:15px;
+  color:var(--dark);
+  list-style:none;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  transition:background .2s;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:hover{background:var(--main-light)}
+.faq-item summary::before{
+  content:"Q";
+  flex-shrink:0;
+  width:32px;
+  height:32px;
+  background:var(--main);
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  font-weight:bold;
+}
+.faq-item summary::after{
+  content:"+";
+  margin-left:auto;
+  color:var(--main);
+  font-size:24px;
+  font-weight:bold;
+  transition:transform .2s;
+}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .answer{
+  padding:0 24px 24px 72px;
+  font-size:14px;
+  line-height:1.8;
+  color:var(--text);
+}
+
+/* ===== 開催概要 + CTA ===== */
+.overview{
+  background:linear-gradient(135deg,#00B0F0 0%,#0079B5 100%);
+  color:#fff;
+  text-align:center;
+}
+.overview .section-label{color:#FFC000}
+.overview .section-title{color:#fff}
+.overview-table{
+  background:rgba(255,255,255,0.1);
+  border-radius:12px;
+  padding:32px;
+  max-width:680px;
+  margin:0 auto 40px;
+}
+.overview-table dl{
+  display:grid;
+  grid-template-columns:140px 1fr;
+  gap:16px 24px;
+  text-align:left;
+}
+.overview-table dt{
+  font-size:13px;
+  font-weight:bold;
+  letter-spacing:1px;
+  opacity:0.8;
+  border-left:3px solid var(--accent);
+  padding-left:10px;
+  align-self:start;
+  margin-top:2px;
+}
+.overview-table dd{
+  font-size:15px;
+  line-height:1.7;
+}
+.overview-cta{
+  display:inline-flex;
+  align-items:center;
+  background:var(--accent);
+  color:var(--dark);
+  font-weight:900;
+  padding:24px 60px;
+  border-radius:50px;
+  font-size:22px;
+  letter-spacing:0.05em;
+  box-shadow:0 6px 24px rgba(255,192,0,0.5);
+  gap:14px;
+  margin-bottom:16px;
+  transition:transform .2s;
+}
+.overview-cta:hover{transform:translateY(-2px);color:var(--dark)}
+.overview-note{
+  font-size:13px;
+  opacity:0.85;
+  margin-top:12px;
+}
+
+/* ===== 注意事項 ===== */
+.notes{
+  background:var(--bg-section);
+  padding:48px 20px;
+}
+.notes-inner{
+  max-width:760px;
+  margin:0 auto;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:24px 32px;
+}
+.notes h3{
+  font-size:14px;
+  color:var(--dark);
+  margin-bottom:12px;
+}
+.notes ul{
+  list-style:none;
+}
+.notes li{
+  font-size:13px;
+  color:var(--text-sub);
+  padding-left:18px;
+  position:relative;
+  margin-bottom:6px;
+}
+.notes li::before{
+  content:"・";
+  position:absolute;
+  left:0;
+  color:var(--main);
+}
+
+/* ===== フッター ===== */
+footer{
+  background:var(--dark);
+  color:#fff;
+  padding:48px 20px;
+  text-align:center;
+}
+footer .logo{
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:16px;
+}
+footer .copy{
+  font-size:12px;
+  opacity:0.7;
+  margin-bottom:8px;
+}
+footer a{color:#fff;opacity:0.8}
+footer a:hover{opacity:1}
+
+/* ===== ハンバーガーボタン（モバイルのみ表示） ===== */
+.hamburger{
+  display:none;
+  position:fixed;
+  top:14px;
+  right:14px;
+  z-index:200;
+  width:48px;
+  height:48px;
+  background:#fff;
+  border:none;
+  border-radius:50%;
+  box-shadow:0 2px 12px rgba(0,63,92,0.18);
+  cursor:pointer;
+  padding:14px;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:stretch;
+}
+.hamburger span{
+  display:block;
+  height:2px;
+  width:100%;
+  background:var(--dark);
+  border-radius:2px;
+  transition:transform .3s, opacity .3s;
+}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ===== モバイルメニュー（オーバーレイ） ===== */
+.mobile-menu{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:rgba(255,255,255,0.98);
+  z-index:150;
+  padding:88px 20px 32px;
+  overflow-y:auto;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .3s;
+}
+.mobile-menu.open{
+  opacity:1;
+  pointer-events:auto;
+}
+.mobile-menu ul{list-style:none;max-width:480px;margin:0 auto}
+.mobile-menu li{border-bottom:1px solid var(--border)}
+.mobile-menu a{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:18px 4px;
+  color:var(--dark);
+  font-size:17px;
+  font-weight:bold;
+}
+.mobile-menu a:hover{color:var(--main)}
+.mobile-menu .num{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--main);
+  color:#fff;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  font-size:12px;
+  flex-shrink:0;
+}
+
+/* ===== レスポンシブ（モバイルファースト調整） ===== */
+@media (max-width: 920px){
+  /* ナビ切替 */
+  .side-nav{display:none}
+  .hamburger{display:flex}
+
+  /* ヒーロー */
+  .hero{padding:40px 18px 56px}
+  .hero .brand{margin-bottom:20px;flex-wrap:wrap;gap:8px}
+  .hero .brand-jpx{font-size:10px}
+  .hero .badge{font-size:12px;padding:5px 12px;letter-spacing:1.5px;margin-bottom:14px}
+  .hero h1{font-size:26px;line-height:1.45;margin-bottom:18px}
+  .hero .lead{font-size:14px;line-height:1.7;margin-bottom:24px}
+  .hero-meta{
+    flex-direction:column;
+    gap:14px;
+    padding:16px 18px;
+    margin-bottom:28px;
+  }
+  .hero-meta-item .value{font-size:16px}
+  .hero-cta{padding:20px 24px;font-size:19px;font-weight:900;width:100%;justify-content:center;letter-spacing:0.05em}
+  .hero-note{font-size:11px}
+
+  /* セクション全体 */
+  section{padding:48px 18px}
+  .section-label{font-size:11px;letter-spacing:2px}
+  .section-title{font-size:22px;margin-bottom:28px;line-height:1.5}
+
+  /* 信頼の根拠 */
+  .trust-grid{grid-template-columns:1fr;gap:14px}
+  .trust-card{padding:24px 20px}
+  .trust-card .num{font-size:36px}
+  .trust-card .num small{font-size:18px}
+
+  /* 過去開催の様子 */
+  .events-grid{grid-template-columns:1fr;gap:14px}
+  .events-lead{font-size:14px;margin-bottom:24px}
+  .event-photo img{aspect-ratio:4/3}
+  .event-photo figcaption{font-size:11px;padding:8px 12px}
+
+  /* 得られること */
+  .benefits-grid{grid-template-columns:1fr;gap:36px}
+  .benefits .lead-block{font-size:15px;line-height:1.8;margin-bottom:36px}
+  .benefit-card{padding:28px 20px}
+  .benefit-card h3{font-size:17px}
+
+  /* タイムテーブル */
+  .timetable-list{padding-left:22px;border-left-width:2px}
+  .timetable-row{padding:16px 0 18px}
+  .timetable-row::before{left:-29px;width:12px;height:12px;top:24px}
+  .timetable-row .time{font-size:16px;display:block;margin-bottom:6px}
+  .timetable-row h4{font-size:16px;display:block;margin-top:4px}
+  .timetable-row .duration,.timetable-row .phase{font-size:10px}
+  .timetable-row .speaker{font-size:12px}
+  .timetable-row .desc{font-size:13px}
+
+  /* 登壇者 */
+  .speakers-grid{grid-template-columns:1fr;gap:18px}
+  .speaker-card{
+    flex-direction:column;
+    text-align:center;
+    padding:24px 20px;
+    align-items:center;
+  }
+  .speaker-card .photo{width:100px;height:100px}
+  .speaker-card .info h3{font-size:19px}
+
+  /* こんな人 */
+  .for-you-grid{grid-template-columns:1fr;gap:14px}
+  .for-you-card{padding:20px}
+  .for-you-card .icon{width:48px;height:48px;font-size:32px}
+  .for-you-card h4{font-size:15px}
+
+  /* 過去参加者の声 */
+  .testimonials-grid{grid-template-columns:1fr;gap:18px}
+  .testimonial-card{padding:24px 20px}
+
+  /* FAQ */
+  .faq-item summary{padding:16px 18px;font-size:14px;gap:12px}
+  .faq-item summary::before{width:28px;height:28px;font-size:13px}
+  .faq-item .answer{padding:0 18px 20px 58px;font-size:13px}
+
+  /* 開催概要 */
+  .overview-table{padding:24px 20px}
+  .overview-table dl{grid-template-columns:1fr;gap:8px 0}
+  .overview-table dt{margin-top:14px;font-size:12px}
+  .overview-table dd{font-size:14px}
+  .overview-cta{padding:22px 28px;font-size:19px;font-weight:900;width:100%;justify-content:center;box-sizing:border-box;letter-spacing:0.05em}
+
+  /* 注意事項 */
+  .notes{padding:32px 18px}
+  .notes-inner{padding:20px}
+
+  /* フッター */
+  footer{padding:36px 18px}
+
+  /* 固定CTA：モバイルは下部全幅バー型 */
+  .float-cta{
+    left:12px;
+    right:12px;
+    bottom:12px;
+    padding:20px 24px;
+    font-size:18px;
+    font-weight:900;
+    letter-spacing:0.05em;
+    text-align:center;
+    justify-content:center;
+    border-radius:8px;
+    box-shadow:0 -2px 16px rgba(0,176,240,0.3);
+  }
+  /* メニュー開いている時はCTA非表示・スクロール禁止 */
+  body.menu-open .float-cta{display:none}
+  body.menu-open{overflow:hidden}
+}
+
+@media (max-width: 480px){
+  .hero h1{font-size:23px}
+  .hero .lead{font-size:13px}
+  .section-title{font-size:20px}
+  section{padding:40px 16px}
+  .hero .brand-logo{font-size:13px;padding:5px 12px}
+  .hero .brand-jpx{font-size:9px}
+  .speaker-card .photo{width:90px;height:90px}
+  .for-you-card{padding:18px}
+  .for-you-card .icon{width:42px;height:42px;font-size:26px}
+  .timetable-list{padding-left:18px}
+  .timetable-row::before{left:-25px}
+}
+</style>
+</head>
+<body>
+
+<!-- 固定サイドナビ -->
+<nav class="side-nav" aria-label="ページ内ナビ">
+  <ul>
+    <li><a href="#hero"><span class="num">01</span>TOP</a></li>
+    <li><a href="#trust"><span class="num">02</span>信頼の根拠</a></li>
+    <li><a href="#events"><span class="num">03</span>過去開催の様子</a></li>
+    <li><a href="#benefits"><span class="num">04</span>得られること</a></li>
+    <li><a href="#timetable"><span class="num">05</span>当日の流れ</a></li>
+    <li><a href="#speakers"><span class="num">06</span>登壇者</a></li>
+    <li><a href="#for-you"><span class="num">07</span>こんな人へ</a></li>
+    <li><a href="#voices"><span class="num">08</span>参加者の声</a></li>
+    <li><a href="#faq"><span class="num">09</span>よくある質問</a></li>
+    <li><a href="#apply"><span class="num">10</span>申込</a></li>
+  </ul>
+</nav>
+
+<!-- ハンバーガーボタン（モバイルのみ表示） -->
+<button class="hamburger" aria-label="メニュー" aria-expanded="false" aria-controls="mobile-menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<!-- モバイルメニュー（オーバーレイ） -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <nav aria-label="モバイルナビ">
+    <ul>
+      <li><a href="#hero"><span class="num">01</span>TOP</a></li>
+      <li><a href="#trust"><span class="num">02</span>信頼の根拠</a></li>
+      <li><a href="#events"><span class="num">03</span>過去開催の様子</a></li>
+      <li><a href="#benefits"><span class="num">04</span>得られること</a></li>
+      <li><a href="#timetable"><span class="num">05</span>当日の流れ</a></li>
+      <li><a href="#speakers"><span class="num">06</span>登壇者</a></li>
+      <li><a href="#for-you"><span class="num">07</span>こんな人へ</a></li>
+      <li><a href="#voices"><span class="num">08</span>参加者の声</a></li>
+      <li><a href="#faq"><span class="num">09</span>よくある質問</a></li>
+      <li><a href="#apply"><span class="num">10</span>申込</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- 固定CTA -->
+<a href="#apply" class="float-cta">
+  申込はこちら<span class="arrow">→</span>
+</a>
+
+<!-- ===== ヒーロー ===== -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="brand">
+      <img src="img/logo-agent-horizontal.png" alt="株式会社エージェント" class="brand-logo-img">
+      <span class="brand-jpx">東京証券取引所 TOKYO PRO Market 上場（証券コード：7098）</span>
+    </div>
+
+    <span class="badge">27卒限定</span>
+
+    <h1>
+      AI時代に考える、<br>
+      納得したキャリアを歩むための<br>
+      <span class="highlight">本気の少人数座談会。</span>
+    </h1>
+
+    <!-- メインビジュアル（バナー画像） -->
+    <figure class="hero-image">
+      <img src="img/hero-main.jpg" alt="AI時代に考える、納得したキャリアを歩むための本気の少人数座談会｜2026.5.20 OFFLINE">
+    </figure>
+
+    <p class="lead">
+      AIに聞いても出てこない「自分がなぜそこで働くのか」。<br>
+      内定はあるけど、なんとなく腹落ちしてない。<br>
+      そんな悩めるあなたと、上場企業の執行役員が一緒に<br>
+      <strong>「自分の判断軸」</strong>をつくる2時間。
+    </p>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="label">DATE</span>
+        <span class="value">2026.5.20 (Wed)</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="label">TIME</span>
+        <span class="value">14:00 - 16:00</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="label">PLACE</span>
+        <span class="value">渋谷・オフライン</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="label">CAPACITY</span>
+        <span class="value">30名限定</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="label">FEE</span>
+        <span class="value">参加無料</span>
+      </div>
+    </div>
+
+    <a href="#apply" class="hero-cta">
+      申込ページへ進む<span class="arrow">→</span>
+    </a>
+    <p class="hero-note">※ 定員30名に達し次第、受付終了します</p>
+  </div>
+</section>
+
+<!-- ===== 信頼の根拠 ===== -->
+<section class="trust" id="trust">
+  <div class="section-inner">
+    <p class="section-label">RELIABILITY</p>
+    <h2 class="section-title">「ここで話す価値」がある<span class="highlight">3つの理由</span></h2>
+
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="num">上場<small>企業</small></div>
+        <p class="label">東京証券取引所<br>TOKYO PRO Market</p>
+        <p class="desc">証券コード 7098／<br>情報開示と<br>コンプライアンスを徹底</p>
+      </div>
+      <div class="trust-card">
+        <div class="num">300<small>事業</small></div>
+        <p class="label">2030年までの<br>事業創出目標</p>
+        <p class="desc">20代から社内起業・<br>事業責任者に<br>挑戦できる環境</p>
+      </div>
+      <div class="trust-card">
+        <div class="num">22<small>年</small></div>
+        <p class="label">人材×IT×事業創造の<br>歴史</p>
+        <p class="desc">カンボジア小学校建設<br>から続く<br>ソーシャルベンチャー</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 過去開催の様子 ===== -->
+<section class="events" id="events">
+  <div class="section-inner">
+    <p class="section-label">PAST EVENTS</p>
+    <h2 class="section-title">過去開催の<span class="highlight">様子</span></h2>
+    <p class="events-lead">少人数だからこそ生まれる、<br>本音で話せる空気感をお届けします。</p>
+
+    <div class="events-grid">
+      <figure class="event-photo">
+        <img src="img/event-talk.jpg" alt="グループ座談会の様子" loading="lazy">
+        <figcaption>グループ座談会。<br>少人数で本音の対話が生まれる。</figcaption>
+      </figure>
+      <figure class="event-photo">
+        <img src="img/event-listen.jpg" alt="登壇者の話を真剣に聞く学生たち" loading="lazy">
+        <figcaption>登壇者の話に真剣に聞き入る<br>参加学生たち。</figcaption>
+      </figure>
+      <figure class="event-photo">
+        <img src="img/event-venue.jpg" alt="渋谷の会場の様子" loading="lazy">
+        <figcaption>渋谷の本社会場。<br>リラックスした空気で進行。</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 得られること ===== -->
+<section class="benefits" id="benefits">
+  <div class="section-inner">
+    <p class="section-label">WHAT YOU GET</p>
+    <h2 class="section-title">この2時間で<span class="highlight">解決できる3つのこと</span></h2>
+
+    <div class="lead-block">
+      AIが「最適解」を出せる時代。<br>
+      キャリアで差がつくのは、<br>
+      <strong>「納得解」を自分で作れるかどうか。</strong>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="number">1</div>
+        <p class="problem">こんな悩みに</p>
+        <h3>これから社会人になる上での<br>「自分の軸」がまだ言葉にできない</h3>
+        <div class="arrow-line"></div>
+        <p>就活軸はあるけど「これで本当にいいのか」と不安が残る27卒へ。自分の価値観を「他者の言葉」で言語化するワークを通じて、<strong>これからの社会人生活に向けた「自分の軸」</strong>を整えていきます。</p>
+      </div>
+      <div class="benefit-card">
+        <div class="number">2</div>
+        <p class="problem">こんな悩みに</p>
+        <h3>AI時代に、自分はどんな価値を<br>創れるのか分からない</h3>
+        <div class="arrow-line"></div>
+        <p>「最適解」はAIが出してくれる。だからこそ、これからの社会で問われるのは<strong>「自分はどんな価値を創るのか」「どう生きるのか」</strong>。複数社の役員を歴任した執行役員と一緒に、AI時代に通用する仕事の在り方・生き方の軸を考える時間に。</p>
+      </div>
+      <div class="benefit-card">
+        <div class="number">3</div>
+        <p class="problem">こんな悩みに</p>
+        <h3>内定先で本当にいいのか、<br>判断がつかない</h3>
+        <div class="arrow-line"></div>
+        <p>選考目的ではない、本音で話せる場。<strong>「第3者視点で壁打ち」</strong>するだけでも、自分の判断軸の輪郭がはっきりします。残りの就活期間を、納得して進む時間に変えるための2時間を。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== タイムテーブル ===== -->
+<section class="timetable" id="timetable">
+  <div class="section-inner">
+    <p class="section-label">TIMETABLE</p>
+    <h2 class="section-title">当日の<span class="highlight">タイムテーブル</span></h2>
+
+    <div class="timetable-list">
+      <div class="timetable-row">
+        <span class="time">13:50</span>
+        <h4>受付開始</h4>
+        <p class="desc">参加者同士の自己紹介から始まります（任意）。</p>
+      </div>
+
+      <div class="timetable-row">
+        <span class="time">14:00</span>
+        <span class="duration">10分</span>
+        <h4>オープニング</h4>
+        <p class="desc">本日の進め方・目的のご説明。</p>
+      </div>
+
+      <div class="timetable-row">
+        <span class="time">14:10</span>
+        <span class="duration">20分</span>
+        <span class="phase">Phase 1</span>
+        <h4>AI時代を生き抜く価値の作り方</h4>
+        <span class="speaker">登壇：執行役員 大塚将通</span>
+        <p class="desc">AIが最適解を出せる時代に、人間が出すべき「納得解」とは何か。変化の激しい時代の未来予想と、あなたの価値の言語化を。</p>
+      </div>
+
+      <div class="timetable-row">
+        <span class="time">14:30</span>
+        <span class="duration">40分</span>
+        <span class="phase">Phase 2</span>
+        <h4>若手社員パネルトーク</h4>
+        <span class="speaker">登壇：入社2年目社員 ＋ 入社5年目社員</span>
+        <p class="desc">「就活軸」「入社の決め手」「乗り越えたこと」「AI活用」の4テーマについて、若手社員が赤裸々に語ります。社会人の楽しさと難しさをリアルに。</p>
+      </div>
+
+      <div class="timetable-row">
+        <span class="time">15:10</span>
+        <span class="duration">20分</span>
+        <span class="phase">Phase 3</span>
+        <h4>「自分軸」を言語化するワーク</h4>
+        <span class="speaker">ファシリテーター：新卒採用担当 市園茜</span>
+        <p class="desc">フレームワークに沿って、自分の価値観を10分で言葉にする。書き出したワークシートはお持ち帰りいただけます。</p>
+      </div>
+
+      <div class="timetable-row">
+        <span class="time">15:30</span>
+        <span class="duration">20分</span>
+        <span class="phase">Phase 4</span>
+        <h4>執行役員からのメッセージ</h4>
+        <span class="speaker">登壇：執行役員 大塚将通</span>
+        <p class="desc">楽天・複数社役員を歴任した大塚が締めます。スキルの話ではなく「自分で決める」ということの話を。重くなりすぎず、心が動く20分に。</p>
+      </div>
+
+      <div class="timetable-row">
+        <span class="time">15:50</span>
+        <span class="duration">10分</span>
+        <h4>クロージング・1on1懇親</h4>
+        <p class="desc">登壇者と自由に話せる時間。1対1で話したい人はこの時間を使ってください。連絡先交換も可能です。</p>
+      </div>
+    </div>
+
+    <p class="timetable-note">※ 当日のコンテンツは、進行状況により前後・多少の変更となる場合があります。あらかじめご了承ください。</p>
+  </div>
+</section>
+
+<!-- ===== 登壇者 ===== -->
+<section class="speakers" id="speakers">
+  <div class="section-inner">
+    <p class="section-label">SPEAKERS</p>
+    <h2 class="section-title">登壇者紹介</h2>
+
+    <div class="speakers-grid">
+      <div class="speaker-card">
+        <div class="photo"><img src="img/speaker-otsuka.jpg" alt="大塚 将通"></div>
+        <div class="info">
+          <span class="role">執行役員</span>
+          <h3>大塚 将通</h3>
+          <p class="en">Masamichi Otsuka</p>
+          <p class="bio">
+            University of London SOAS College卒業後、ロンドンより帰国。SE・事業開発・マーケティングを経て30歳で独立。複数社の執行役員・取締役を歴任後、2023年12月に株式会社エージェント執行役員に就任。
+          </p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <div class="photo"><img src="img/speaker-ichizono.jpg" alt="市園 茜"></div>
+        <div class="info">
+          <span class="role">新卒採用担当</span>
+          <h3>市園 茜</h3>
+          <p class="en">Akane Ichizono</p>
+          <p class="bio">
+            マレーシアの大学を卒業後、2023年4月に株式会社エージェントへ新卒入社。キャリアアドバイザーを経験後、人材開発本部にて新卒採用を担当。300事業を共に創る仲間を採用するべく、学生に伴走中。
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== こんな人におすすめ ===== -->
+<section class="for-you" id="for-you">
+  <div class="section-inner">
+    <p class="section-label">FOR YOU</p>
+    <h2 class="section-title">こんな27卒に<span class="highlight">来てほしい</span></h2>
+
+    <div class="for-you-grid">
+      <div class="for-you-card">
+        <div class="icon">①</div>
+        <div>
+          <h4>内定はあるけど、"ここじゃない"と感じている</h4>
+          <p>条件で選べないから悩んでいる。納得して進む選択肢を、一緒に作りましょう。</p>
+        </div>
+      </div>
+
+      <div class="for-you-card">
+        <div class="icon">②</div>
+        <div>
+          <h4>自分の就活軸が、まだ言葉にできない</h4>
+          <p>「やりたいことが分からない」のではなく、まだ言語化されていないだけ。フレームワークで2時間あれば言葉になります。</p>
+        </div>
+      </div>
+
+      <div class="for-you-card">
+        <div class="icon">③</div>
+        <div>
+          <h4>役員クラスと、ちゃんと話したことがない</h4>
+          <p>説明会の質疑応答ではなく、本音で話せる距離感。少人数だからできる時間です。</p>
+        </div>
+      </div>
+
+      <div class="for-you-card">
+        <div class="icon">④</div>
+        <div>
+          <h4>同世代の挑戦的な学生と、出会いたい</h4>
+          <p>選ばれた30名。懇親会では参加者同士の連絡先交換も可能です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 過去参加者の声 ===== -->
+<section class="testimonials" id="voices">
+  <div class="section-inner">
+    <p class="section-label">VOICES</p>
+    <h2 class="section-title">過去参加学生の<span class="highlight">声</span></h2>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p class="quote">漠然としていた就活やキャリアへの不安を、言語化する大きな助けになった時間でした。自分の中でモヤモヤしていたものが少しずつ整理できたと感じています。</p>
+        <div class="person">
+          <div class="photo silhouette">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="50" cy="36" r="18"/>
+              <path d="M 22 95 Q 22 60, 50 60 Q 78 60, 78 95 Z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="name">参加学生</p>
+            <p class="meta">筑波大学 / 4年・男性</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="quote">AI時代の中で、私たち学生がこれから果たしていく役割について、じっくり考えるきっかけになりました。普段の就活では出会えない問いに向き合える時間でした。</p>
+        <div class="person">
+          <div class="photo silhouette">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="50" cy="36" r="18"/>
+              <path d="M 22 95 Q 22 60, 50 60 Q 78 60, 78 95 Z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="name">参加学生</p>
+            <p class="meta">大正大学 / 4年・女性</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="quote">もっと詳しく、長くお話を聞きたいと思える時間でした。より多くの人が参加して、就職することの意味を学んでほしいと思える内容でした。</p>
+        <div class="person">
+          <div class="photo silhouette">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="50" cy="36" r="18"/>
+              <path d="M 22 95 Q 22 60, 50 60 Q 78 60, 78 95 Z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="name">参加学生</p>
+            <p class="meta">明治学院大学 / 4年・男性</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="section-inner">
+    <p class="section-label">FAQ</p>
+    <h2 class="section-title">よくある質問</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>27卒以外も参加できますか？</summary>
+        <div class="answer">
+          本イベントは <strong>27卒（2027年3月卒業予定）の方限定</strong> の少人数イベントです。28卒の方は今後開催予定の別イベントをご案内いたしますので、お問い合わせください。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>服装はスーツですか？</summary>
+        <div class="answer">
+          <strong>服装自由です（スーツ不要）</strong>。リラックスした服装でお越しください。本音で話せる場づくりを大切にしています。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>選考に進まなくても参加して大丈夫ですか？</summary>
+        <div class="answer">
+          もちろん大丈夫です。本イベントは<strong>選考ではありません</strong>。エージェントへの応募意思の有無は問いません。「自分軸を見つける」ことだけが目的です。参加後に選考をご希望の方には、別途ご案内いたします。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>当日の持ち物は何ですか？</summary>
+        <div class="answer">
+          <strong>筆記用具のみで結構です</strong>。Phase 3のワークでお使いいただくワークシートはこちらでご用意します。書き込んだものはそのままお持ち帰りいただけます。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>オンライン参加は可能ですか？</summary>
+        <div class="answer">
+          本イベントは<strong>オフラインのみの開催</strong>です。少人数で本音で話す場をつくるため、対面開催にこだわっています。会場は渋谷駅から徒歩圏（道玄坂2丁目）です。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>1人での参加でも浮きませんか？</summary>
+        <div class="answer">
+          ご安心ください。<strong>参加者の8割以上が1人でのご参加</strong>です。受付開始（13:50〜）に参加者同士の自己紹介タイムを設けていますので、その時間でリラックスしていただけます。
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 開催概要 + CTA ===== -->
+<section class="overview" id="apply">
+  <div class="section-inner">
+    <p class="section-label">OVERVIEW</p>
+    <h2 class="section-title">開催概要</h2>
+
+    <div class="overview-table">
+      <dl>
+        <dt>イベント名</dt>
+        <dd>【27卒限定】就活軸が、2時間で言葉になる<br>上場企業執行役員と語る、少人数キャリア座談会</dd>
+
+        <dt>開催日時</dt>
+        <dd>2026年5月20日（水）14:00〜16:00（13:50 受付開始）</dd>
+
+        <dt>会場</dt>
+        <dd>株式会社エージェント 東京本社<br>渋谷区道玄坂2丁目25-12 道玄坂通 5F</dd>
+
+        <dt>定員</dt>
+        <dd>30名限定（先着順）</dd>
+
+        <dt>参加費</dt>
+        <dd>無料</dd>
+
+        <dt>対象</dt>
+        <dd>27卒（2027年3月卒業予定）の学生</dd>
+
+        <dt>主催</dt>
+        <dd>株式会社エージェント<br>（東京証券取引所 TOKYO PRO Market 上場・証券コード 7098）</dd>
+      </dl>
+    </div>
+
+    <a href="https://public.n-ats.hrmos.co/agent-network/events/2255644947456999424/schedules/2255645456772521984/apply" class="overview-cta" target="_blank" rel="noopener">
+      申込フォームへ進む<span>→</span>
+    </a>
+    <p class="overview-note">※ 定員30名に達し次第、受付を終了します</p>
+  </div>
+</section>
+
+<!-- ===== 注意事項 ===== -->
+<div class="notes">
+  <div class="notes-inner">
+    <h3>【注意事項】</h3>
+    <ul>
+      <li>本イベントは選考ではありません</li>
+      <li>参加後に選考を希望される方には個別にご案内します</li>
+      <li>定員30名に達し次第、受付を終了します</li>
+      <li>服装自由（スーツ不要）</li>
+      <li>当日のキャンセルはご遠慮ください（運営の都合上）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== フッター ===== -->
+<footer>
+  <p class="logo">株式会社エージェント</p>
+  <p class="copy">人材×IT×事業創造で、社会課題を解決する<span class="nowrap">ソーシャルベンチャー</span></p>
+  <p class="copy">東京証券取引所 TOKYO PRO Market 上場（証券コード：7098）</p>
+  <p class="copy" style="margin-top:24px">© 2026 AGENT, Inc. All rights reserved.</p>
+</footer>
+
+<script>
+// ハンバーガーメニュー開閉
+const hamburger=document.querySelector('.hamburger');
+const mobileMenu=document.querySelector('.mobile-menu');
+const toggleMenu=(forceState)=>{
+  const isOpen=forceState!==undefined?forceState:!hamburger.classList.contains('open');
+  hamburger.classList.toggle('open',isOpen);
+  mobileMenu.classList.toggle('open',isOpen);
+  document.body.classList.toggle('menu-open',isOpen);
+  hamburger.setAttribute('aria-expanded',isOpen);
+  mobileMenu.setAttribute('aria-hidden',!isOpen);
+};
+hamburger.addEventListener('click',()=>toggleMenu());
+mobileMenu.querySelectorAll('a').forEach(a=>{
+  a.addEventListener('click',()=>toggleMenu(false));
+});
+document.addEventListener('keydown',(e)=>{
+  if(e.key==='Escape' && hamburger.classList.contains('open')) toggleMenu(false);
+});
+
+// FAQ アコーディオン：他を開いたら閉じる
+document.querySelectorAll('.faq-item').forEach(item=>{
+  item.addEventListener('toggle',()=>{
+    if(item.open){
+      document.querySelectorAll('.faq-item').forEach(other=>{
+        if(other!==item) other.open=false;
+      });
+    }
+  });
+});
+
+// スクロール位置でナビハイライト（PC側ナビ＋モバイルメニュー両方）
+const sections=document.querySelectorAll('section[id], div[id]');
+const navLinks=document.querySelectorAll('.side-nav a, .mobile-menu a');
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const id=entry.target.id;
+      navLinks.forEach(a=>{
+        a.style.background=a.getAttribute('href')==='#'+id?'var(--main-light)':'';
+        a.style.color=a.getAttribute('href')==='#'+id?'var(--main-dark)':'';
+      });
+    }
+  });
+},{rootMargin:'-30% 0px -60% 0px'});
+sections.forEach(s=>observer.observe(s));
+</script>
+
+</body>
+</html>
